@@ -1,11 +1,10 @@
 # Password Retriever
 
-#### Usage: download PasswordRetriever.html, open in a browser, and bookmark for easy access
-
-![screenshot](https://github.com/awhayat/password-retriever/blob/main/screenshot.PNG)
-
 This light-weight program uses JavaScript to generate strong passwords based on the RGB values of pixels. You can retrieve your password by clicking on the same point again, replacing the need to save it in a password manager.
 
-#### Future updates:
-- add special characters to passwords and increase length
-- add more images
+#### Set up:
+- download PasswordRetriever.html
+- open in a browser (works best with Chrome)
+- bookmark for easy access
+
+![screenshot](https://github.com/awhayat/password-retriever/blob/main/screenshot.PNG)
