@@ -169,7 +169,7 @@
         var password = "";
         var add = "";
         var used = [];
-        var characters = ["8", "J", "U", "5", "I", "C", "l", "u", "0", "E", "1", "F", "g", "V", "W", "h", "X", "r", "j", "9", "k", "Q", "M", "L", "d", "m", "O", "6", "o", "n", "7", "P", "q", "K", "R", "c", "s", "2", "t", "T", "3", "b", "v", "G", "H", "w", "x", "i", "a", "Y", "z", "4", "e", "f", "S", "p", "Z", "B", "N", "D", "y", "A"]; 
+        var characters = ["8", "J", "U", "5", "I", "C", "l", "b", "0", "E", "1", "F", "g", "V", "W", "h", "X", "r", "j", "9", "k", "Q", "M", "L", "d", "m", "O", "6", "o", "n", "7", "P", "q", "K", "R", "c", "s", "2", "t", "T", "3", "u", "v", "G", "H", "w", "x", "i", "a", "Y", "z", "4", "e", "f", "S", "p", "Z", "B", "N", "D", "y", "A"]; 
         var pos = 0;
         
         c = document.getElementById(id.id);
@@ -177,7 +177,7 @@
         var imgData = ctx.getImageData(0, 0, c.width, c.height);
         
         for (var i = 0; i < 16; i+=4) {
-          pos = imgData.data[i + 3] % 62;
+          pos = imgData.data[i + 2] % 62;
           add = characters[pos];
           while (inArray(add, used, 1)) {
             pos = pos + 1;
@@ -213,7 +213,7 @@
           used.push(add);
           password = password.concat(add);
           
-          pos = imgData.data[i + 2] % 62;
+          pos = imgData.data[i + 3] % 62;
           add = characters[pos];
           while (inArray(add, used, 1)) {
             pos = pos + 1;
